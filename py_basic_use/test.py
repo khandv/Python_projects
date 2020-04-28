@@ -1,23 +1,20 @@
 class A:
-    val = 1
+   def foo(self):
+      print("A")
 
-    def foo(self):
-        A.val += 2
+class B(A):
+   pass
 
-    def bar(self):
-        self.val += 1
+class C:
+   def foo(self):
+      print("C")
 
+class D(C):
+   def foo(self):
+      print("D")
 
-a = A()
-b = A()
+class E(B, C, D):
+   pass
 
-a.bar()
-print(a.val)
-a.foo()
-print(a.val)
-
-c = A()
-print()
-print(a.val)
-print(b.val)
-print(c.val)
+print(E.mro())
+E().foo()
