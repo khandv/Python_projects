@@ -54,7 +54,7 @@ def parse():
             print(f'Парсинг страницы {page} из {pages_count}...')
             html = get_html(URL, params={'page': page})
             cars.extend(get_content(html.text))
-
+            
         print(f'Получено {len(cars)} автомобилей')
         save_file(cars, FILE)
         os.startfile(FILE)
