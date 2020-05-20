@@ -17,6 +17,7 @@ student2 = {
 
 # data = [student1, student2]
 # data_json = json.dumps(data, indent=4, sort_keys=True)
+# print(data_json)
 # data_again = json.loads(data_json)
 # print(sum(data_again[0]["scores"]))
 

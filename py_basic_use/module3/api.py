@@ -16,5 +16,6 @@ res = requests.get(api_url, params=params)
 # print(res.json())  # returns json.loads(res.text) :)
 
 data = res.json()
+print(data)
 template = 'Current temperature in {} is {}'
 print(template.format(city, data["main"]["temp"]))
