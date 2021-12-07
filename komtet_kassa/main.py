@@ -6,7 +6,7 @@
 
 def main(name = input('Введите номер заказа: ')):
     # Use a breakpoint in the code line below to debug your script.
-    print(f'Заказ №: {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    print(f'Заказ1 №: {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
 # Press the green button in the gutter to run the script.
